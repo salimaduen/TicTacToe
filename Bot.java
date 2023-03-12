@@ -47,7 +47,6 @@ public class Bot extends Player {
 
             if (counter == 2 && self != 1) {
                 int probability = random.nextInt(0,11);
-                System.out.println(probability);
                 if (probability > 3) {
                     counterPlay(row).setSymbol(this.symbol, this).setOccupied();
                     return true;
@@ -76,7 +75,6 @@ public class Bot extends Player {
 
             if (counter == 2 && self != 1) {
                 int probability = random.nextInt(0,11);
-                System.out.println(probability);
                 if (probability > 3) {
                     counterPlay(column).setSymbol(this.symbol, this).setOccupied();
                     return true;
