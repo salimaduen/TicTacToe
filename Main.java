@@ -9,22 +9,27 @@ public class Main {
         int input;
         do {
             System.out.println("Welcome to Tic Tac Toe!");
-            System.out.println("1. Start game");
-            System.out.println("2. Game stats");
-            System.out.println("3. Quit");
+            System.out.println("1. Start 2-player game");
+            System.out.println("2. Play against AI");
+            System.out.println("3. Game stats");
+            System.out.println("4. Quit");
             input = sc.nextInt();
             options(input);
-        } while(input != 3);
+        } while(input != 4);
 
 
     }
 
     public static void options(int input) {
         if (input == 1) {
-            game.playGame(true);
+            game.playGame();
         }
 
         if (input == 2) {
+            game.playGame(true);
+        }
+
+        if (input == 3) {
             game.gameStats();
         }
     }

@@ -56,7 +56,6 @@ public class TicTacToe {
     public void playGame() {
         // New board is created
         this.board = new Board();
-
         // Game logic
         gameLogic();
     }
@@ -143,6 +142,7 @@ public class TicTacToe {
 
             this.winner = null;
         }
+        currentTurn = player1;
     }
 
 
